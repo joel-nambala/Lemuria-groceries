@@ -35,6 +35,16 @@
   .product-card img {
     height: 170px;
   }
+
+  #contacts .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .contact-img {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {

@@ -105,6 +105,9 @@
       </div>
     </header>
 
+    <!-- Place order modal -->
+    <div class="modal place-order"></div>
+
     <!-- Special offer -->
     <section id="special-offer">
       <h2 class="text-center">Special offer</h2>
@@ -146,8 +149,8 @@
           <ul class="nav">
             <li class="nav-item vegetables">Vegetables</li>
             <li class="nav-item juice">Juice</li>
-            <li class="nav-item fruits">Fruits</li>
-            <li class="nav-item meat">Meat</li>
+            <!-- <li class="nav-item fruits">Fruits</li>
+            <li class="nav-item meat">Meat</li> -->
           </ul>
         </nav>
 
@@ -164,5 +167,108 @@
         </div>
       </div>
     </section>
+
+    <section id="contacts">
+      <h2 class="text-center">Contacts</h2>
+      <div class="container contact-container">
+        <div class="contact-form">
+          <form>
+            <h3>Send us a message</h3>
+            <div class="form-group">
+              <label for="name">First Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="first-name"
+                placeholder="e.g John Doe"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="e.g john@example.com"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message here"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send
+            </button>
+          </form>
+
+          <img src="img/hero.png" alt="" class="contact-img" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-info">
+          <div class="location">
+            <h3>Location</h3>
+            <ul>
+              <li>Revolution House</li>
+              <li>
+                <a href="mailto:joel.n.wanjala@gmail.com"
+                  >joel.n.wanjala@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="other-links">
+            <h3>Other links</h3>
+            <ul>
+              <li>
+                <a href="#header">Business partners</a>
+              </li>
+              <li>
+                <a href="#header">Blog</a>
+              </li>
+              <li>
+                <a href="#header">Business partners</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="links">
+            <h3>Social links</h3>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            Created by
+            <a href="mailto:joel.n.wanjala@gmail.com">Joel Nambala</a>
+          </p>
+          <p>Copyright &copy;, 2021. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

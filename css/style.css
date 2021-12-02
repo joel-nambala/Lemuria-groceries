@@ -20,6 +20,7 @@ h2 {
   text-transform: uppercase;
   color: #0ca678;
   font-size: 26px;
+  letter-spacing: 0.1rem;
 }
 
 .active {
@@ -107,6 +108,7 @@ h2 {
 
 #header .hero h1 {
   margin-bottom: 20px;
+  letter-spacing: 0.3rem;
 }
 
 #header .hero-text p {
@@ -194,8 +196,9 @@ h2 {
 .products-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 6%;
+  gap: 80px;
   margin-top: 4%;
+  margin-bottom: 30px;
 }
 
 .products-content h3 {
@@ -204,4 +207,77 @@ h2 {
 
 .products-content img {
   height: 200px;
+}
+
+/* Contacts */
+#contacts {
+  padding: 5% 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/hero-bg.png);
+  color: #fff;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#contacts h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacts .contact-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5%;
+  width: 60vw;
+}
+
+#contacts .contact-form label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#contacts .contact-form input,
+#contacts .contact-form textarea {
+  margin-bottom: 20px;
+}
+
+.contact-img {
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+footer {
+  padding: 5% 0 1% 0;
+}
+
+footer .footer-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 60px;
+}
+
+footer a {
+  color: #0ca678;
+  text-decoration: none;
+  transition: all ease 0.6s;
+}
+
+footer .footer-info ul li {
+  list-style: none;
+  margin-left: -25px;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  line-height: 0.6;
 }

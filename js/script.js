@@ -1,17 +1,12 @@
 'use strict';
 import * as data from './data.js';
-
-const vegetable = document.querySelector('.vegetables');
-const fruit = document.querySelector('.fruits');
-const juice = document.querySelector('.juice');
-const meat = document.querySelector('.meat');
-const productContent = document.querySelector('.products-content');
+import * as dom from './domElements.js';
 
 // Functions
 const renderVegetables = function () {
   const vegetables = data.vegetables;
-  productContent.innerHTML = '';
-  vegetable.classList.toggle('active');
+  dom.productContent.innerHTML = '';
+  dom.vegetable.classList.toggle('active');
 
   vegetables.forEach(item => {
     const html = `
@@ -24,16 +19,16 @@ const renderVegetables = function () {
     `;
 
     // productContent.innerHTML = '';
-    productContent.insertAdjacentHTML('afterbegin', html);
+    dom.productContent.insertAdjacentHTML('afterbegin', html);
   });
 };
 
 const renderJuice = function () {
-  juice.classList.toggle('active');
-  vegetable.classList.remove('active');
+  dom.juice.classList.toggle('active');
+  dom.vegetable.classList.remove('active');
 
   const juices = data.juice;
-  productContent.innerHTML = '';
+  dom.productContent.innerHTML = '';
 
   juices.forEach(item => {
     console.log(item);
@@ -46,11 +41,11 @@ const renderJuice = function () {
       </div>
     `;
 
-    productContent.insertAdjacentHTML('afterbegin', html);
+    dom.productContent.insertAdjacentHTML('afterbegin', html);
   });
 };
 
 // Event listeners
-vegetable.addEventListener('click', renderVegetables);
-juice.addEventListener('click', renderJuice);
+dom.vegetable.addEventListener('click', renderVegetables);
+dom.juice.addEventListener('click', renderJuice);
 window.addEventListener('load', renderVegetables);
