@@ -60,7 +60,14 @@
               <a href="#contacts" class="nav-link">Contacts</a>
             </li>
           </ul>
-          <button class="place-order">Place order</button>
+          <button
+            type="button"
+            class="place-order"
+            data-bs-toggle="modal"
+            data-bs-target="#my-modal"
+          >
+            Place order
+          </button>
         </nav>
 
         <div class="dropdown drop-left">
@@ -82,7 +89,14 @@
                 <a href="#contacts" class="nav-link">Contacts</a>
               </li>
             </ul>
-            <button class="place-order">Place order</button>
+            <button
+              type="button"
+              class="place-order"
+              data-bs-toggle="modal"
+              data-bs-target="#my-modal"
+            >
+              Place order
+            </button>
           </ul>
         </div>
       </div>
@@ -106,7 +120,71 @@
     </header>
 
     <!-- Place order modal -->
-    <div class="modal place-order"></div>
+    <div class="modal place-order" id="my-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Place your order today</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-group">
+                <label for="grocery">Grocery:</label>
+                <input
+                  type="text"
+                  name="grocery"
+                  id="grocery"
+                  class="form-control"
+                  required
+                  placeholder="Grocery"
+                />
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input
+                  type="number"
+                  name="quantity"
+                  id="quantity"
+                  required
+                  value="1"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="newsletter">Newsletter: </label>
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="newsletter"
+                  checked
+                />
+                Yes, please
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Special offer -->
     <section id="special-offer">
